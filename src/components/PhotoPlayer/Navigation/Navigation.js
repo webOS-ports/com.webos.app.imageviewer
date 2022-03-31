@@ -10,7 +10,7 @@ const Navigation = ({iconSize = 'large', isPlaying = true, leftIconClick, rigthI
 			<Icon
 				className={componentCss.icon}
 				disabled={isPlaying}
-				onClick={leftIconClick}
+				onClick={isPlaying ? null : leftIconClick}
 				size={iconSize}
 				title=""
 			>
@@ -27,7 +27,7 @@ const Navigation = ({iconSize = 'large', isPlaying = true, leftIconClick, rigthI
 			<Icon
 				className={componentCss.icon}
 				disabled={isPlaying}
-				onClick={rigthIconClick}
+				onClick={isPlaying ? null : rigthIconClick}
 				size={iconSize}
 				title=""
 			>
